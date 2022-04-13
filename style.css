@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: Times New Roman;
+  padding: 10px;
+  background: #8FB8DE;
+}
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #235789;
+}
+
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #380036;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(51, 133, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 50%;
+}
+.centercolumn {
+  float: right;
+  width: 100%;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #8CFFDA;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 5px;
+  text-align: left;
+  background: #235789;
+
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* links in cards */
+
+
+.card a{
+	float: center;
+	display: block;
+display: inline-block;
+/*
+    width:50%;
+*/
+	color: black;
+	text-align: left;
+	text-decoration: underline;
+  }
+.card a:hover {
+  background-color: rgb(255, 102, 163);
+  color: black;
+}
+.card a:visited {
+  text-decoration: underline;
+}
+
+.card p{
+	font-size: 20px;
+}
+
+table, th, td {
+  border: 2px solid #380036;
+  text-align:center;
+}
+th, td {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+tr th {
+  background-color: #FFCFD2;
+}
+
+
+
+li {
+  text-align: left;
+}
+li a {
+  display: block;
+  color: none;
+  text-align: left;
+  padding: 5px;
+  text-decoration: none;
+}
